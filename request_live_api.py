@@ -2,8 +2,8 @@
 
 import requests
 
-# Replace the placeholder with the deployed Render service URL after deployment.
-API_URL = "https://<your-render-service>.onrender.com/predict"
+# Deployed Render service URL.
+API_URL = "https://census-salary-api-a9un.onrender.com/predict"
 
 # A typical high-income profile (based on Census row with fnlgt 209642).
 PAYLOAD = {
@@ -26,7 +26,7 @@ PAYLOAD = {
 
 def main():
     """Call the live API and print the status code and prediction."""
-    response = requests.post(API_URL, json=PAYLOAD, timeout=30)
+    response = requests.post(API_URL, json=PAYLOAD, timeout=60)
     print(f"Status code: {response.status_code}")
     # 1 = income >50K, 0 = income <=50K
     print(f"Prediction: {response.json()['prediction']}")
