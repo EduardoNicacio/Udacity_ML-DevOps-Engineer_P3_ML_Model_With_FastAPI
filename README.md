@@ -8,6 +8,10 @@ The training script and API are exercises to complete. Once implemented, run the
 
 ## Environment Set up
 
+### Project location (as per Rubric)
+
+<https://github.com/EduardoNicacio/Udacity_ML-DevOps-Engineer_P3_ML_Model_With_FastAPI>
+
 * **Option 1: Using pip and venv (Recommended)**
   * Ensure you have Python 3.13 installed
   * Create virtual environment: `python3.13 -m venv .venv`
