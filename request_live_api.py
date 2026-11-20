@@ -26,6 +26,7 @@ PAYLOAD = {
 
 def main():
     """Call the live API and print the status code and prediction."""
+    print(f"POST {API_URL}")
     response = requests.post(API_URL, json=PAYLOAD, timeout=60)
     print(f"Status code: {response.status_code}")
     # 1 = income >50K, 0 = income <=50K
