@@ -10,7 +10,7 @@ OK_COLOR = '\033[92m'
 WARN_COLOR = '\033[93m'
 
 
-def run_sanity_check(test_dir):
+def run_sanity_check(test_dir):  # noqa: C901
 
     print((
         'This script will perform a sanity test to ensure'
